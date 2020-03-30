@@ -19,14 +19,14 @@ MODULE_LICENSE("MIT");
 
 static unsigned long counter = 0;
 static void *flag_start(struct seq_file *file, loff_t *pos) {
-	if ( *pos == 0 ) {	
+  if ( *pos == 0 ) {  
     counter = 0;
-		return &counter;
-	}
-	else {
-		*pos = 0;
-		return NULL;
-	}
+    return &counter;
+  }
+  else {
+    *pos = 0;
+    return NULL;
+  }
 }
 
 static void *flag_next(struct seq_file *file, void *v, loff_t *pos) {
