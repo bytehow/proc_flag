@@ -71,4 +71,4 @@ sudo insmod kflags.ko
 By default, the module will load `/proc/flag`, and generate random flags of size 1024.
 
 * To change `/proc/flag` into `/proc/other`, modify `#define PROC_NAME`
-* To change flag size to, modify `#define FLAG_SIZE`
+* To change flag size, modify `#define FLAG_SIZE`
