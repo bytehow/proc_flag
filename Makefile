@@ -6,7 +6,7 @@ build:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 
 load:
-	sudo rmmod kflags.ko
+	sudo rmmod kflags.ko || true
 	sudo insmod kflags.ko
 
 clean:
